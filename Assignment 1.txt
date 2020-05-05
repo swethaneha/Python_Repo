@@ -1,0 +1,62 @@
+
+TASK 1
+
+#Program1:Find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200
+
+i=2000
+l=[]
+while i <= 3200:
+    if i % 7 == 0 and i % 5 != 0:
+       l.append(i)
+    i=i+1
+print(*l,sep=',')
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+#Write a Python program to accept the user's first and last name and then getting them printed in the the reverse order with a space between first name and last name
+l=input().split()
+print(f'{l[1]} {l[0]}')
+
+----------------------------------------------------------------------------------------------------------------------------
+
+# Write a Python program to find the volume of a sphere with diameter 12 cm.
+# Formula: V=4/3 * p * r3
+import math
+#d=12 r=d/2 print(round(4/3*(math.pi)*pow(r,3),2))
+print(round((4/3)*(math.pi)*pow((12/2),3),2))
+
+
+TASK 2 :
+
+
+#Write a program which accepts a sequence of comma-separated numbers from console and generate a list.
+
+print(list(map(int,input().split(','))))
+
+----------------------------------------------------------------------------------------------------------------------------
+
+#Pattern
+
+for i in range(6):
+    for j in range(i):
+        print('*',end=' ')
+    print()
+for i in range(4,0,-1):
+    for j in range(i):
+        print('*',end=' ')
+    print()
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+#Write a Python program to reverse a word after accepting the input from the user
+
+str=input()
+for i in range(len(str)-1,-1,-1):   
+    print(str[i],end='')
+
+
+
+
+
